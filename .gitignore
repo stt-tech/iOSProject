@@ -31,15 +31,17 @@ build/    # 忽略 build/ 目录下的所有文件
 doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt# Obj-C/Swift specific
 
 
+# CocoaPods
+Pods
+!Podfile
+!Podfile.lock
+
+
 *.hmap
 *.ipa
 *.dSYM.zip
 *.dSYM
 
-# CocoaPods
-Pods
-!Podfile
-!Podfile.lock
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
