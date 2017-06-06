@@ -1,3 +1,41 @@
-PODFILE CHECKSUM: 81085ec0a53ea42bf7f540e8734b9bdad47b1a24
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Canvas (0.1.2)
+  - FastImageCache (1.5.1)
+  - iCarousel (1.8.3)
+  - Shimmer (1.0.2)
+  - Tweaks (2.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - Canvas (~> 0.1.2)
+  - FastImageCache (~> 1.5.1)
+  - iCarousel (~> 1.8.3)
+  - Shimmer (~> 1.0.2)
+  - Tweaks (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  FastImageCache: 2e7a6f677b15336eb3d1a4092a494676256c891d
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
+
+PODFILE CHECKSUM: 79ba4c80c2634e224992bb7b70cd2cdf7782598b
 
 COCOAPODS: 1.2.0

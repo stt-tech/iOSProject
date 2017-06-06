@@ -1,18 +1,18 @@
 
 platform:ios,'8.0'
 
-
 target 'iOSProject' do
-#pod 'AFNetworking', '~> 3.1.0'
+    
+pod 'AFNetworking', '~> 3.1.0'
 # Canvas 快速实现
-#pod 'Canvas', '~> 0.1.2'
+pod 'Canvas', '~> 0.1.2'
 # 图片列表滑动更加流畅
-#pod 'FastImageCache', '~> 1.5.1'
+pod 'FastImageCache', '~> 1.5.1'
 # facebook 提供的一种闪烁的效果
-#pod 'Shimmer', '~> 1.0.2'
+pod 'Shimmer', '~> 1.0.2'
 # 一种旋转木马的效果
-#pod 'iCarousel', '~> 1.8.3'
+pod 'iCarousel', '~> 1.8.3'
 # 旨在帮助 iOS 开发者更快的迭代应用, 方便用户动态的调整参数, 是的
-#pod 'Tweaks', '~> 2.0.0'
-end
+pod 'Tweaks', '~> 2.0.0'
 
+end
