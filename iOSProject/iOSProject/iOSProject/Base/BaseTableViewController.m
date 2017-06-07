@@ -14,12 +14,12 @@
 
 @implementation BaseTableViewController
 
--(instancetype)init
+-(void)loadView
 {
-    if (self = [super init]) {
-        
-    }return  self;
+    [super loadView];
+    [self initTableView];
 }
+
 -(void)initTableView{
 
     UITableView *talbeView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -36,7 +36,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  _dateArray.count;
+    return  0;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

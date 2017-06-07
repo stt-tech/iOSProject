@@ -132,7 +132,7 @@
         <!--Font View Controller-->
         <scene sceneID="zg4-Xd-knL">
             <objects>
-                <viewController id="sqO-kJ-JbJ" customClass="FontViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="sqO-kJ-JbJ" customClass="FontViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4c7-DG-8Hc"/>
                         <viewControllerLayoutGuide type="bottom" id="bpL-GU-CMe"/>
@@ -183,10 +183,12 @@
             </objects>
             <point key="canvasLocation" x="1068" y="-1276"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item1-->
         <scene sceneID="3sd-mf-w38">
             <objects>
                 <navigationController id="FUD-0M-hX7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item1" id="jR8-aW-cpL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="RgZ-HT-4xe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -197,12 +199,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avl-9C-X48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-514" y="-724"/>
+            <point key="canvasLocation" x="-799" y="-725"/>
         </scene>
         <!--Canvas View Controller-->
         <scene sceneID="VXY-by-Bhj">
             <objects>
-                <viewController id="cHg-53-mkU" customClass="Canvas_ViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="cHg-53-mkU" customClass="Canvas_ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="POE-Ss-hCf"/>
                         <viewControllerLayoutGuide type="bottom" id="Esa-28-df3"/>

@@ -15,4 +15,5 @@ pod 'iCarousel', '~> 1.8.3'
 # 旨在帮助 iOS 开发者更快的迭代应用, 方便用户动态的调整参数, 是的
 pod 'Tweaks', '~> 2.0.0'
 
+pod 'SDWebImage', '~> 4.0.0'
 end

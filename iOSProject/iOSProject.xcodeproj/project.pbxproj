@@ -28,6 +28,9 @@
 		B021AC751EE6917500ED9A4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B021AC731EE6917500ED9A4A /* LaunchScreen.storyboard */; };
 		B021AC801EE6917500ED9A4A /* iOSProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B021AC7F1EE6917500ED9A4A /* iOSProjectTests.m */; };
 		B021AC8B1EE6917500ED9A4A /* iOSProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B021AC8A1EE6917500ED9A4A /* iOSProjectUITests.m */; };
+		B082D3D11EE7E738006DF3A3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B082D3D01EE7E738006DF3A3 /* README */; };
+		B082D3D31EE7E771006DF3A3 /* fetch_demo_images.sh in Resources */ = {isa = PBXBuildFile; fileRef = B082D3D21EE7E771006DF3A3 /* fetch_demo_images.sh */; };
+		B082D3D71EE7F0D9006DF3A3 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = B082D3D61EE7F0D9006DF3A3 /* Model.m */; };
 		B0B8AD641EE78D66003D58B1 /* Canvas_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8AD5D1EE78D66003D58B1 /* Canvas_ViewController.m */; };
 		B0B8AD651EE78D66003D58B1 /* CSAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8AD5F1EE78D66003D58B1 /* CSAnimationTableViewController.m */; };
 		B0B8AD661EE78D66003D58B1 /* CSSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8AD621EE78D66003D58B1 /* CSSectionHeaderCell.m */; };
@@ -46,6 +49,7 @@
 		B0D8856A1EE7C7F00030D66C /* FastImageCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D885691EE7C7F00030D66C /* FastImageCacheViewController.m */; };
 		B0D8856D1EE7C8290030D66C /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D8856C1EE7C8290030D66C /* BaseTableViewController.m */; };
 		B0D885741EE7CD010030D66C /* FICDPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D885731EE7CD010030D66C /* FICDPhoto.m */; };
+		B0D885771EE7D2F40030D66C /* FastlimageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D885761EE7D2F40030D66C /* FastlimageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +139,10 @@
 		B021AC861EE6917500ED9A4A /* iOSProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B021AC8A1EE6917500ED9A4A /* iOSProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSProjectUITests.m; sourceTree = "<group>"; };
 		B021AC8C1EE6917500ED9A4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B082D3D01EE7E738006DF3A3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		B082D3D21EE7E771006DF3A3 /* fetch_demo_images.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = fetch_demo_images.sh; path = Images/fetch_demo_images.sh; sourceTree = "<group>"; };
+		B082D3D51EE7F0D9006DF3A3 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		B082D3D61EE7F0D9006DF3A3 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		B0B8AD5C1EE78D66003D58B1 /* Canvas_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas_ViewController.h; sourceTree = "<group>"; };
 		B0B8AD5D1EE78D66003D58B1 /* Canvas_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Canvas_ViewController.m; sourceTree = "<group>"; };
 		B0B8AD5E1EE78D66003D58B1 /* CSAnimationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAnimationTableViewController.h; sourceTree = "<group>"; };
@@ -161,6 +169,8 @@
 		B0D8856C1EE7C8290030D66C /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		B0D885721EE7CD010030D66C /* FICDPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FICDPhoto.h; sourceTree = "<group>"; };
 		B0D885731EE7CD010030D66C /* FICDPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FICDPhoto.m; sourceTree = "<group>"; };
+		B0D885751EE7D2F40030D66C /* FastlimageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastlimageTableViewCell.h; sourceTree = "<group>"; };
+		B0D885761EE7D2F40030D66C /* FastlimageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastlimageTableViewCell.m; sourceTree = "<group>"; };
 		D53233A0E622547F8104559C /* libPods-iOSProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -412,6 +422,15 @@
 			path = iOSProjectUITests;
 			sourceTree = "<group>";
 		};
+		B082D3D41EE7F0C3006DF3A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B082D3D51EE7F0D9006DF3A3 /* Model.h */,
+				B082D3D61EE7F0D9006DF3A3 /* Model.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B089B4071EE6C08B00531C14 /* iOSProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +465,7 @@
 		B089B40A1EE6C08B00531C14 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B082D3D21EE7E771006DF3A3 /* fetch_demo_images.sh */,
 				B0D8854C1EE7AA540030D66C /* Images */,
 				B0D8854F1EE7AA540030D66C /* Plist */,
 			);
@@ -477,6 +497,7 @@
 		B0D8854C1EE7AA540030D66C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B082D3D01EE7E738006DF3A3 /* README */,
 				B0D885591EE7C4400030D66C /* 1.jpg */,
 				B0D8855A1EE7C4400030D66C /* 2.jpg */,
 				B0D8855B1EE7C4400030D66C /* 3.jpg */,
@@ -501,6 +522,7 @@
 		B0D885671EE7C4C20030D66C /* FastImageCache */ = {
 			isa = PBXGroup;
 			children = (
+				B082D3D41EE7F0C3006DF3A3 /* Models */,
 				B0D885711EE7CD010030D66C /* Views */,
 				B0D885681EE7C7F00030D66C /* FastImageCacheViewController.h */,
 				B0D885691EE7C7F00030D66C /* FastImageCacheViewController.m */,
@@ -513,6 +535,8 @@
 			children = (
 				B0D885721EE7CD010030D66C /* FICDPhoto.h */,
 				B0D885731EE7CD010030D66C /* FICDPhoto.m */,
+				B0D885751EE7D2F40030D66C /* FastlimageTableViewCell.h */,
+				B0D885761EE7D2F40030D66C /* FastlimageTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -696,10 +720,12 @@
 				B0D885621EE7C4400030D66C /* 3.jpg in Resources */,
 				B021AC701EE6917500ED9A4A /* Main.storyboard in Resources */,
 				B0170CE11EE6CE4F0048223F /* Second.storyboard in Resources */,
+				B082D3D31EE7E771006DF3A3 /* fetch_demo_images.sh in Resources */,
 				B0B8AD671EE78D66003D58B1 /* CSSectionHeaderCell.xib in Resources */,
 				B0170CF81EE78A200048223F /* article.txt in Resources */,
 				B0D885521EE7AA540030D66C /* plachtor@3x.png in Resources */,
 				B0170CDF1EE6CE310048223F /* First.storyboard in Resources */,
+				B082D3D11EE7E738006DF3A3 /* README in Resources */,
 				B0170D061EE78A6D0048223F /* TraditionalCode.txt in Resources */,
 				B0170CF91EE78A200048223F /* code.txt in Resources */,
 			);
@@ -778,10 +804,12 @@
 				B0170D091EE78A6D0048223F /* FontViewController.m in Sources */,
 				B0170D071EE78A6D0048223F /* ZMChineseConvert.m in Sources */,
 				B0B8AD651EE78D66003D58B1 /* CSAnimationTableViewController.m in Sources */,
+				B0D885771EE7D2F40030D66C /* FastlimageTableViewCell.m in Sources */,
 				B0170CBC1EE6C3F80048223F /* ViewController.m in Sources */,
 				B0170CE61EE787F50048223F /* BaseViewController.m in Sources */,
 				B0B8AD641EE78D66003D58B1 /* Canvas_ViewController.m in Sources */,
 				B0D8856A1EE7C7F00030D66C /* FastImageCacheViewController.m in Sources */,
+				B082D3D71EE7F0D9006DF3A3 /* Model.m in Sources */,
 				B0170CBB1EE6C3F80048223F /* AppDelegate.m in Sources */,
 				B0170CFA1EE78A200048223F /* MarkDownViewController.m in Sources */,
 				B0D8856D1EE7C8290030D66C /* BaseTableViewController.m in Sources */,

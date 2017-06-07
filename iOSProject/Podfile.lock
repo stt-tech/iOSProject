@@ -17,6 +17,9 @@ PODS:
   - Canvas (0.1.2)
   - FastImageCache (1.5.1)
   - iCarousel (1.8.3)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - Shimmer (1.0.2)
   - Tweaks (2.0.0)
 
@@ -25,6 +28,7 @@ DEPENDENCIES:
   - Canvas (~> 0.1.2)
   - FastImageCache (~> 1.5.1)
   - iCarousel (~> 1.8.3)
+  - SDWebImage (~> 4.0.0)
   - Shimmer (~> 1.0.2)
   - Tweaks (~> 2.0.0)
 
@@ -33,9 +37,10 @@ SPEC CHECKSUMS:
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
   FastImageCache: 2e7a6f677b15336eb3d1a4092a494676256c891d
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
 
-PODFILE CHECKSUM: 79ba4c80c2634e224992bb7b70cd2cdf7782598b
+PODFILE CHECKSUM: ccd1a0aa4049a7455fbfa2049b072721070c539c
 
 COCOAPODS: 1.2.0
