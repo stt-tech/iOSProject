@@ -91,6 +91,30 @@
                                             <segue destination="cHg-53-mkU" kind="push" id="t3U-7k-6PT"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="XlN-dy-ukt">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XlN-dy-ukt" id="Olu-ro-CZc">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FastImageCache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLg-oQ-dd4">
+                                                    <rect key="frame" x="30" y="0.0" width="128" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GLg-oQ-dd4" firstAttribute="leading" secondItem="Olu-ro-CZc" secondAttribute="leading" constant="30" id="BJh-0w-am3"/>
+                                                <constraint firstItem="GLg-oQ-dd4" firstAttribute="top" secondItem="Olu-ro-CZc" secondAttribute="top" id="Gxi-Zk-OFB"/>
+                                                <constraint firstAttribute="bottom" secondItem="GLg-oQ-dd4" secondAttribute="bottom" id="OQA-VY-ksE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OFP-EG-6Wu" kind="push" id="6op-3G-HSo"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -163,7 +187,7 @@
         <scene sceneID="3sd-mf-w38">
             <objects>
                 <navigationController id="FUD-0M-hX7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RgZ-HT-4xe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="RgZ-HT-4xe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -257,6 +281,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHT-6E-s27" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1092" y="-245"/>
+        </scene>
+        <!--Fast Image Cache View Controller-->
+        <scene sceneID="yzt-FV-lrh">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="OFP-EG-6Wu" customClass="FastImageCacheViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TMz-uh-VPj"/>
+                        <viewControllerLayoutGuide type="bottom" id="bN5-0X-R1Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cyf-x3-7K9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bt6-g6-YxK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSl-Pk-6J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="416"/>
         </scene>
         <!--Animation Table View Controller-->
         <scene sceneID="ZG6-0w-6BP">
