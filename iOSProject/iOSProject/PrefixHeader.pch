@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  iOSProject
+//
+//  Created by Alpha on 2017/6/7.
+//  Copyright © 2017年 STT. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Header.h"
+
+#endif /* PrefixHeader_pch */

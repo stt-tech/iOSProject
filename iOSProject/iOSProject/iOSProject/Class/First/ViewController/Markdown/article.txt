@@ -1,0 +1,171 @@
+##(一)FMDB的使用
+>（本篇参考了唐巧先生的这篇博客[在iOS开发中使用FMDB](http://blog.devtang.com/blog/2012/04/22/use-fmdb/)和他放在Github的源代码[FmdbSample](https://github.com/tangqiaoboy/FmdbSample)，以及FMDB的Github项目说明文档[ccgus/fmdb](https://github.com/ccgus/fmdb)，主要目的是整理自己的知识点）
+
+###(1)安装
+可以通过CocoaPods来导入FMDB。
+>pod 'FMDB'
+
+###(2)FMDB类详解
+想要查看FMDB各个类的功能和用法，请点击[这里](http://ccgus.github.io/fmdb/html/index.html)。当然我觉得还是把文件导入到项目里然后直接看源码就行了。
+
+###(3)使用ARC还是手动管理内存
+FMDB同时兼容`ARC`和`非ARC`工程，它会在编译期获知你的内存管理方式，然后自动帮你处理内存管理这些事。
+
+###(4)FMDB主要用到的三个类
+> * `FMDatabase`   ---  代表了一个SQLite数据库，它被用来执行SQL语句。
+> * `FMResultSet`  ---  `FMDatabase`执行`query`语句之后返回的结果集。
+> * `FMDatabaseQueue`  ---  如果想在多线程中执行`query`和`update`，你应该使用这个类。
+
+###(5)引入相关文件
+>FMDatabase.h
+>FMDatabase.m
+>FMDatabaseAdditions.h
+>FMDatabaseAdditions.m
+>FMDatabasePool.h
+>FMDatabasePool.m
+>FMDatabaseQueue.h
+>FMDatabaseQueue.m
+>FMResultSet.h
+>FMResultSet.m
+
+###(6)创建数据库
+使用SQLites数据库文件的路径来创建数据库。当该文件不存在时，fmdb会自己创建一个；如果你传入的参数是空串(`@""`)，则fmdb会在临时文件目录下创建这个数据库；如果你传入的参数是`NULL`，则它会建立一个在内存中的数据库。
+```
+FMDatabase * db = [FMDatabase databaseWithPath:@"/tmp/tmp.db"];
+```
+
+###(7)打开数据库
+如果权限不足或者资源不足则会导致打开失败。
+```Objective-c
+if (![db open]) {
+    [db release];
+    return;
+}
+```
+
+###(8)执行更新操作
+除`SELECT`以外的其他操作都是更新操作,包括`CREATE`、`UPDATE`、`INSERT`、`ALTER`、`COMMIT`、`BEGIN`、`DETACH`、`DELETE`、`DROP`、`END`、`EXPLAIN`、`VACUUM`、`REPLACE`。
+```
+NSString * sql = @"insert into user (name, password) values(?, ?) ";
+BOOL res = [db executeUpdate:sql, @"hello", @"123"];
+```
+返回值为`BOOL`类型。若返回`false`则说明发生了错误，可以调用`lastErrorMessage`和`lastErrorCode`方法以查看错误信息。
+
+###(9)执行SELECT操作
+```
+FMResultSet * rs = [db executeQuery:@"SELECT * FROM user"];
+while ([rs next]) {
+    NSString * name = [rs stringForColumn:@"name"];
+    NSString * pass = [rs stringForColumn:@"password"];
+}
+```
+FMDB提供如下多个方法来获取不同类型的数据：
+>intForColumn:
+>longForColumn:
+>longLongIntForColumn:
+>boolForColumn:
+>doubleForColumn:
+>stringForColumn:
+>dateForColumn:
+>dataForColumn:
+>dataNoCopyForColumn:
+>UTF8StringForColumnIndex:
+>objectForColumn:
+
+上述每一个方法都对应着一个`{type}ForColumnIndex:`方法，该方法通过列的索引来获取数据，与通过列名获取数据效果一样:
+```
+NSString * name = [rs stringForColumnIndex: 0];
+```
+另外，不必关闭`FMResultSet`。因为它会随着`FMResultSet`被回收或者数据库被关闭而自动关闭。
+
+###(10)关闭数据库
+当完成查询和更新操作后应该关闭数据库。
+```
+[db close];
+```
+
+###(11)执行多个SQL语句
+可以使用`FMDatabase`的`executeStatements: withResultBlock:`方法执行多个SQL语句。
+```
+NSString *sql = @"create table bulktest1 (id integer primary key autoincrement, x text);"
+                "create table bulktest2 (id integer primary key autoincrement, y text);"
+                "create table bulktest3 (id integer primary key autoincrement, z text);"
+                "insert into bulktest1 (x) values ('XXX');"
+                "insert into bulktest2 (y) values ('YYY');"
+                "insert into bulktest3 (z) values ('ZZZ');";
+
+success = [db executeStatements:sql];
+
+sql = @"select count(*) as count from bulktest1;"
+        "select count(*) as count from bulktest2;"
+        "select count(*) as count from bulktest3;";
+
+success = [self.db executeStatements:sql withResultBlock:^int(NSDictionary *dictionary) {
+    NSInteger count = [dictionary[@"count"] integerValue];
+    XCTAssertEqual(count, 1, @"expected one record for dictionary %@", dictionary);
+    return 0;
+}];
+```
+
+###(12)数据参数
+通常情况下，你可以按照标准的SQL语句，用?表示执行语句的参数，然后，可以我们可以调用`executeUpdate`方法来将?所指代的具体参数传入，通常是用变长参数来传递进去的，如下：
+```
+NSString * sql = @"insert into User (name, password) values (?, ?)";
+[db executeUpdate:sql, user.name, user.password];
+```
+这里需要注意的是，参数必须是`NSObject`的子类，所以象`int`,`double`,`bool`这种基本类型，需要封装成对应的包装类才行。
+
+###(13)线程安全
+不要在多线程中初始化和使用`FMDatabase`的实例。取而代之的是，你应该使用`FMDatabaseQueue`。用法如下：
+```
+FMDatabaseQueue *queue = [FMDatabaseQueue databaseQueueWithPath:aPath];
+[queue inDatabase:^(FMDatabase *db) {
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:1]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:2]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:3]];
+
+    FMResultSet *rs = [db executeQuery:@"select * from foo"];
+    while ([rs next]) {
+        …
+    }
+}];
+```
+`FMDatabaseQueue`中事务：
+```
+[queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:1]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:2]];
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:3]];
+
+    if (whoopsSomethingWrongHappened) {
+        *rollback = YES;
+        return;
+    }
+    // etc…
+    [db executeUpdate:@"INSERT INTO myTable VALUES (?)", [NSNumber numberWithInt:4]];
+}];
+```
+
+##（二）在命令行下查看sqlite文件
+唐巧先生在他的博客中提到了一个图形化界面的工具，是Firefox的一个名为`SQLite Manager`的插件。
+我想说的是如何在命令行下查看sqlite数据库的内容。
+
+首先使用cd命令进入sqlite所在的目录（我的文件是在沙盒中的`Documents`文件夹中）：
+![文件目录位置][1]
+![进入目录][2]
+使用`sqlite3`命令打开数据库文件：
+![打开数据库文件][3]
+使用`.tables`命令可以查看改数据库中有多少个表：
+![查看表][4]
+使用`.schema`命令可以查看表的模式，如图所示：
+![查看表的模式][5]
+最后使用`select`语句查看内容（千万记得`select`语句最后要加分号）：
+![select查询语句][6]
+其他功能大家可以自己使用`.help`命令查看。
+
+[1]: http://upload-images.jianshu.io/upload_images/788472-8a9cbf6103c98a1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[2]: http://upload-images.jianshu.io/upload_images/788472-139d895baf2d7eb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[3]: http://upload-images.jianshu.io/upload_images/788472-97890b6cd87414cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[4]: http://upload-images.jianshu.io/upload_images/788472-62fba8d06e4c67d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[5]: http://upload-images.jianshu.io/upload_images/788472-967cdf0978e89cbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[6]: http://upload-images.jianshu.io/upload_images/788472-7833ae4d5475152f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
