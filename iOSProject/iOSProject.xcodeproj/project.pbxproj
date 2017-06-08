@@ -31,6 +31,11 @@
 		B082D3D11EE7E738006DF3A3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B082D3D01EE7E738006DF3A3 /* README */; };
 		B082D3D31EE7E771006DF3A3 /* fetch_demo_images.sh in Resources */ = {isa = PBXBuildFile; fileRef = B082D3D21EE7E771006DF3A3 /* fetch_demo_images.sh */; };
 		B082D3D71EE7F0D9006DF3A3 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = B082D3D61EE7F0D9006DF3A3 /* Model.m */; };
+		B0B6DD311EE8F40B00A37555 /* Shimmer_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B6DD301EE8F40B00A37555 /* Shimmer_ViewController.m */; };
+		B0B6DD3A1EE8F4B200A37555 /* BaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B6DD331EE8F4B200A37555 /* BaseManager.m */; };
+		B0B6DD3B1EE8F4B200A37555 /* IMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B6DD351EE8F4B200A37555 /* IMManager.m */; };
+		B0B6DD3C1EE8F4B200A37555 /* LiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B6DD371EE8F4B200A37555 /* LiveManager.m */; };
+		B0B6DD3D1EE8F4B200A37555 /* TXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B6DD391EE8F4B200A37555 /* TXManager.m */; };
 		B0B8AD641EE78D66003D58B1 /* Canvas_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8AD5D1EE78D66003D58B1 /* Canvas_ViewController.m */; };
 		B0B8AD651EE78D66003D58B1 /* CSAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8AD5F1EE78D66003D58B1 /* CSAnimationTableViewController.m */; };
 		B0B8AD661EE78D66003D58B1 /* CSSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8AD621EE78D66003D58B1 /* CSSectionHeaderCell.m */; };
@@ -143,6 +148,16 @@
 		B082D3D21EE7E771006DF3A3 /* fetch_demo_images.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = fetch_demo_images.sh; path = Images/fetch_demo_images.sh; sourceTree = "<group>"; };
 		B082D3D51EE7F0D9006DF3A3 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		B082D3D61EE7F0D9006DF3A3 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		B0B6DD2F1EE8F40B00A37555 /* Shimmer_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shimmer_ViewController.h; sourceTree = "<group>"; };
+		B0B6DD301EE8F40B00A37555 /* Shimmer_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shimmer_ViewController.m; sourceTree = "<group>"; };
+		B0B6DD321EE8F4B200A37555 /* BaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseManager.h; sourceTree = "<group>"; };
+		B0B6DD331EE8F4B200A37555 /* BaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseManager.m; sourceTree = "<group>"; };
+		B0B6DD341EE8F4B200A37555 /* IMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMManager.h; sourceTree = "<group>"; };
+		B0B6DD351EE8F4B200A37555 /* IMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMManager.m; sourceTree = "<group>"; };
+		B0B6DD361EE8F4B200A37555 /* LiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveManager.h; sourceTree = "<group>"; };
+		B0B6DD371EE8F4B200A37555 /* LiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveManager.m; sourceTree = "<group>"; };
+		B0B6DD381EE8F4B200A37555 /* TXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXManager.h; sourceTree = "<group>"; };
+		B0B6DD391EE8F4B200A37555 /* TXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXManager.m; sourceTree = "<group>"; };
 		B0B8AD5C1EE78D66003D58B1 /* Canvas_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas_ViewController.h; sourceTree = "<group>"; };
 		B0B8AD5D1EE78D66003D58B1 /* Canvas_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Canvas_ViewController.m; sourceTree = "<group>"; };
 		B0B8AD5E1EE78D66003D58B1 /* CSAnimationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAnimationTableViewController.h; sourceTree = "<group>"; };
@@ -235,6 +250,14 @@
 		B0170CD41EE6CD800048223F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				B0B6DD321EE8F4B200A37555 /* BaseManager.h */,
+				B0B6DD331EE8F4B200A37555 /* BaseManager.m */,
+				B0B6DD341EE8F4B200A37555 /* IMManager.h */,
+				B0B6DD351EE8F4B200A37555 /* IMManager.m */,
+				B0B6DD361EE8F4B200A37555 /* LiveManager.h */,
+				B0B6DD371EE8F4B200A37555 /* LiveManager.m */,
+				B0B6DD381EE8F4B200A37555 /* TXManager.h */,
+				B0B6DD391EE8F4B200A37555 /* TXManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -277,6 +300,7 @@
 		B0170CD91EE6CE0A0048223F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B0B6DD291EE8F40500A37555 /* Shimmer */,
 				B0D885671EE7C4C20030D66C /* FastImageCache */,
 				B0B8AD5B1EE78D66003D58B1 /* Canvas */,
 				B0170CFB1EE78A590048223F /* Font */,
@@ -470,6 +494,15 @@
 				B0D8854F1EE7AA540030D66C /* Plist */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		B0B6DD291EE8F40500A37555 /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				B0B6DD2F1EE8F40B00A37555 /* Shimmer_ViewController.h */,
+				B0B6DD301EE8F40B00A37555 /* Shimmer_ViewController.m */,
+			);
+			path = Shimmer;
 			sourceTree = "<group>";
 		};
 		B0B8AD5B1EE78D66003D58B1 /* Canvas */ = {
@@ -801,18 +834,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B8AD661EE78D66003D58B1 /* CSSectionHeaderCell.m in Sources */,
+				B0B6DD3B1EE8F4B200A37555 /* IMManager.m in Sources */,
 				B0170D091EE78A6D0048223F /* FontViewController.m in Sources */,
 				B0170D071EE78A6D0048223F /* ZMChineseConvert.m in Sources */,
 				B0B8AD651EE78D66003D58B1 /* CSAnimationTableViewController.m in Sources */,
 				B0D885771EE7D2F40030D66C /* FastlimageTableViewCell.m in Sources */,
+				B0B6DD3C1EE8F4B200A37555 /* LiveManager.m in Sources */,
 				B0170CBC1EE6C3F80048223F /* ViewController.m in Sources */,
+				B0B6DD311EE8F40B00A37555 /* Shimmer_ViewController.m in Sources */,
 				B0170CE61EE787F50048223F /* BaseViewController.m in Sources */,
 				B0B8AD641EE78D66003D58B1 /* Canvas_ViewController.m in Sources */,
 				B0D8856A1EE7C7F00030D66C /* FastImageCacheViewController.m in Sources */,
 				B082D3D71EE7F0D9006DF3A3 /* Model.m in Sources */,
+				B0B6DD3A1EE8F4B200A37555 /* BaseManager.m in Sources */,
 				B0170CBB1EE6C3F80048223F /* AppDelegate.m in Sources */,
 				B0170CFA1EE78A200048223F /* MarkDownViewController.m in Sources */,
 				B0D8856D1EE7C8290030D66C /* BaseTableViewController.m in Sources */,
+				B0B6DD3D1EE8F4B200A37555 /* TXManager.m in Sources */,
 				B0D885741EE7CD010030D66C /* FICDPhoto.m in Sources */,
 				B021AC671EE6917500ED9A4A /* main.m in Sources */,
 			);
