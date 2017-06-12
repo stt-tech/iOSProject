@@ -8,7 +8,7 @@
 
 #import "IMManager.h"
 
-#import <ImSDK/ImSDK.h>
+//#import <ImSDK/ImSDK.h>
 
 @implementation IMManager
 
@@ -16,12 +16,12 @@ singleton_implementation(IMManager);
 
 +(void)initIMConfig
 {
-    [[IMManager sharedIMManager] initIMConfig];
+//    [[IMManager sharedIMManager] initIMConfig];
 }
 
 -(void)initIMConfig
 {
-    TIMManager * manager = [TIMManager sharedInstance];
+//    TIMManager * manager = [TIMManager sharedInstance];
     
     
 }
