@@ -62,6 +62,8 @@
 		B0ED86E31EEEAD9E006CA8C6 /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = B0ED86E21EEEAD9E006CA8C6 /* public_key.der */; };
 		B0ED86E51EEEB0C3006CA8C6 /* m_public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = B0ED86E41EEEB0C3006CA8C6 /* m_public_key.der */; };
 		B0ED86E71EEEB0CB006CA8C6 /* m_private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = B0ED86E61EEEB0CB006CA8C6 /* m_private_key.p12 */; };
+		B0F227A81EFCF7C7002A46CC /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F227A71EFCF7C7002A46CC /* Third.storyboard */; };
+		B0F227AC1EFCF99A002A46CC /* Third_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F227AB1EFCF99A002A46CC /* Third_TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +204,9 @@
 		B0ED86E21EEEAD9E006CA8C6 /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
 		B0ED86E41EEEB0C3006CA8C6 /* m_public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = m_public_key.der; sourceTree = "<group>"; };
 		B0ED86E61EEEB0CB006CA8C6 /* m_private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = m_private_key.p12; sourceTree = "<group>"; };
+		B0F227A71EFCF7C7002A46CC /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
+		B0F227AA1EFCF99A002A46CC /* Third_TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Third_TableViewController.h; sourceTree = "<group>"; };
+		B0F227AB1EFCF99A002A46CC /* Third_TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Third_TableViewController.m; sourceTree = "<group>"; };
 		D53233A0E622547F8104559C /* libPods-iOSProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -491,6 +496,7 @@
 		B089B4081EE6C08B00531C14 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B0F227A11EFCF7B2002A46CC /* Third */,
 				B0170CDB1EE6CE0F0048223F /* Second */,
 				B0170CD81EE6CE0A0048223F /* First */,
 				B0170CD61EE6CDA10048223F /* Base */,
@@ -614,6 +620,24 @@
 				B0ED86DE1EEEA5A7006CA8C6 /* RSAViewController.m */,
 			);
 			path = RSA;
+			sourceTree = "<group>";
+		};
+		B0F227A11EFCF7B2002A46CC /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				B0F227A71EFCF7C7002A46CC /* Third.storyboard */,
+				B0F227B21EFCF9AD002A46CC /* ViewControllers */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		B0F227B21EFCF9AD002A46CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F227AA1EFCF99A002A46CC /* Third_TableViewController.h */,
+				B0F227AB1EFCF99A002A46CC /* Third_TableViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C4F2B47FA60F8448FDCABDCD /* Pods */ = {
@@ -786,6 +810,7 @@
 				B021AC751EE6917500ED9A4A /* LaunchScreen.storyboard in Resources */,
 				B0D885511EE7AA540030D66C /* plachtor@2x.png in Resources */,
 				B0B8AD6E1EE7956C003D58B1 /* InfoPlist.strings in Resources */,
+				B0F227A81EFCF7C7002A46CC /* Third.storyboard in Resources */,
 				B0170D081EE78A6D0048223F /* lantinghei.ttf in Resources */,
 				B0D885611EE7C4400030D66C /* 2.jpg in Resources */,
 				B0ED86E71EEEB0CB006CA8C6 /* m_private_key.p12 in Resources */,
@@ -884,6 +909,7 @@
 				B0170D091EE78A6D0048223F /* FontViewController.m in Sources */,
 				B0ED86DF1EEEA5A7006CA8C6 /* RSAViewController.m in Sources */,
 				B0170D071EE78A6D0048223F /* ZMChineseConvert.m in Sources */,
+				B0F227AC1EFCF99A002A46CC /* Third_TableViewController.m in Sources */,
 				B0B8AD651EE78D66003D58B1 /* CSAnimationTableViewController.m in Sources */,
 				B0D885771EE7D2F40030D66C /* FastlimageTableViewCell.m in Sources */,
 				B0B6DD3C1EE8F4B200A37555 /* LiveManager.m in Sources */,

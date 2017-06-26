@@ -16,4 +16,8 @@ pod 'iCarousel', '~> 1.8.3'
 pod 'Tweaks', '~> 2.0.0'
 
 pod 'SDWebImage', '~> 4.0.0'
+
+
+
+pod 'Texture', '~> 2.3.3'
 end

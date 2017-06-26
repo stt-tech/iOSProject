@@ -17,10 +17,32 @@ PODS:
   - Canvas (0.1.2)
   - FastImageCache (1.5.1)
   - iCarousel (1.8.3)
+  - PINCache (3.0.1-beta.4):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
+    - PINCache/Core (= 3.0.1-beta.4)
+  - PINCache/Arc-exception-safe (3.0.1-beta.4):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.4):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.9):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.9):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.9):
+    - PINCache (= 3.0.1-beta.4)
+    - PINRemoteImage/Core
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - Shimmer (1.0.2)
+  - Texture (2.3.3):
+    - Texture/PINRemoteImage (= 2.3.3)
+  - Texture/Core (2.3.3)
+  - Texture/PINRemoteImage (2.3.3):
+    - PINRemoteImage/iOS (= 3.0.0-beta.9)
+    - PINRemoteImage/PINCache
+    - Texture/Core
   - Tweaks (2.0.0)
 
 DEPENDENCIES:
@@ -30,6 +52,7 @@ DEPENDENCIES:
   - iCarousel (~> 1.8.3)
   - SDWebImage (~> 4.0.0)
   - Shimmer (~> 1.0.2)
+  - Texture (~> 2.3.3)
   - Tweaks (~> 2.0.0)
 
 SPEC CHECKSUMS:
@@ -37,10 +60,14 @@ SPEC CHECKSUMS:
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
   FastImageCache: 2e7a6f677b15336eb3d1a4092a494676256c891d
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  PINCache: a89c8f609232afac77128557bd12c861844423d7
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: e4e02e15a6f96cedbcef2abf1c9c1228dc9897d7
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  Texture: e01a363c2b6567e1ff27a878995e0d271fbb424c
   Tweaks: 524fa47636cce3bf3a4d9156e980f10ae9480e81
 
-PODFILE CHECKSUM: ccd1a0aa4049a7455fbfa2049b072721070c539c
+PODFILE CHECKSUM: 7fe584ae9f7fc0c20575752d652b6b8c69f31515
 
 COCOAPODS: 1.2.0
