@@ -41,6 +41,7 @@
 		B0B8AD661EE78D66003D58B1 /* CSSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B8AD621EE78D66003D58B1 /* CSSectionHeaderCell.m */; };
 		B0B8AD671EE78D66003D58B1 /* CSSectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B8AD631EE78D66003D58B1 /* CSSectionHeaderCell.xib */; };
 		B0B8AD6E1EE7956C003D58B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0B8AD6D1EE7956C003D58B1 /* InfoPlist.strings */; };
+		B0B90DBE1F009E58001A7932 /* Gif_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B90DBD1F009E58001A7932 /* Gif_ViewController.m */; };
 		B0D885511EE7AA540030D66C /* plachtor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D8854D1EE7AA540030D66C /* plachtor@2x.png */; };
 		B0D885521EE7AA540030D66C /* plachtor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0D8854E1EE7AA540030D66C /* plachtor@3x.png */; };
 		B0D885531EE7AA540030D66C /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0D885501EE7AA540030D66C /* 1.plist */; };
@@ -177,6 +178,8 @@
 		B0B8AD6D1EE7956C003D58B1 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		B0B8AD6F1EE7958F003D58B1 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		B0B8AD701EE795A8003D58B1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B0B90DBC1F009E58001A7932 /* Gif_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gif_ViewController.h; sourceTree = "<group>"; };
+		B0B90DBD1F009E58001A7932 /* Gif_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gif_ViewController.m; sourceTree = "<group>"; };
 		B0D8854D1EE7AA540030D66C /* plachtor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plachtor@2x.png"; sourceTree = "<group>"; };
 		B0D8854E1EE7AA540030D66C /* plachtor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plachtor@3x.png"; sourceTree = "<group>"; };
 		B0D885501EE7AA540030D66C /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
@@ -553,6 +556,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B0B90DB61F009D7D001A7932 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0B90DBC1F009E58001A7932 /* Gif_ViewController.h */,
+				B0B90DBD1F009E58001A7932 /* Gif_ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		B0D8854C1EE7AA540030D66C /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +646,7 @@
 		B0F227B21EFCF9AD002A46CC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B0B90DB61F009D7D001A7932 /* ViewController */,
 				B0F227AA1EFCF99A002A46CC /* Third_TableViewController.h */,
 				B0F227AB1EFCF99A002A46CC /* Third_TableViewController.m */,
 			);
@@ -923,6 +936,7 @@
 				B0170CBB1EE6C3F80048223F /* AppDelegate.m in Sources */,
 				B0170CFA1EE78A200048223F /* MarkDownViewController.m in Sources */,
 				B0D8856D1EE7C8290030D66C /* BaseTableViewController.m in Sources */,
+				B0B90DBE1F009E58001A7932 /* Gif_ViewController.m in Sources */,
 				B0ED86DB1EEE9ED0006CA8C6 /* RSAEncryptor.m in Sources */,
 				B0B6DD3D1EE8F4B200A37555 /* TXManager.m in Sources */,
 				B0D885741EE7CD010030D66C /* FICDPhoto.m in Sources */,

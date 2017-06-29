@@ -13,6 +13,11 @@
 static NSArray * getTableViewDataArray(){
     return @[@"ASDKgram"];
 }
+
+static NSArray *getVCArray(){
+    return @[@"Gif_ViewController"];
+}
+
 static NSString * const cellID = @"cellID";
 @interface Third_TableViewController ()
 
@@ -28,10 +33,7 @@ static NSString * const cellID = @"cellID";
     self.dataArray = getTableViewDataArray();
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 #pragma mark - Table view data source
 
@@ -50,7 +52,17 @@ static NSString * const cellID = @"cellID";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [self pushToNextViewController:getVCArray()[indexPath.row]];
 }
+
+-(void)pushToNextViewController:(NSString *)controller
+{
+    Class class = NSClassFromString(controller);
+    UIViewController * vc = (UIViewController *)[[class alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 
 @end
