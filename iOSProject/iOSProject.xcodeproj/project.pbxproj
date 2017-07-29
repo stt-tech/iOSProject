@@ -69,7 +69,7 @@
 		B0F909281F2C35D10007E3F6 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F909271F2C35D10007E3F6 /* WKWebViewController.m */; };
 		B0F9092B1F2C3A390007E3F6 /* Base_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9092A1F2C3A390007E3F6 /* Base_ViewController.m */; };
 		B0F9092D1F2C3AE80007E3F6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F9092C1F2C3AE10007E3F6 /* WebKit.framework */; };
-		B0F909311F2C51630007E3F6 /* Programe_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F909301F2C51630007E3F6 /* Programe_ViewController.m */; };
+		B0F909311F2C51630007E3F6 /* Programe_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F909301F2C51630007E3F6 /* Programe_ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B0F909351F2C519E0007E3F6 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F909341F2C519E0007E3F6 /* PersonModel.m */; };
 		B0F909381F2C55750007E3F6 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F909371F2C55750007E3F6 /* NSDictionary+Log.m */; };
 		B0F9093B1F2C5A4B0007E3F6 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9093A1F2C5A4B0007E3F6 /* NSArray+Log.m */; };
