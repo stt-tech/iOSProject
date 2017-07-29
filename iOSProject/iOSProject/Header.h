@@ -7,6 +7,8 @@
 //
 
 
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+
 // 空值判断
 #define IsNullObject(obj) (obj == nil || obj == Nil || obj == NULL || [obj isKindOfClass:[NSNull class]] || ![obj isKindOfClass:[NSObject class]])
 
