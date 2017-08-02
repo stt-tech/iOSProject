@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51DE37D8C3A305295DE3318A /* libPods-iOSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D53233A0E622547F8104559C /* libPods-iOSProject.a */; };
+		B0078D2C1F31C41F00C05392 /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0078D2B1F31C41F00C05392 /* NSOperationViewController.m */; };
 		B0170CBB1EE6C3F80048223F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0170CB81EE6C3F80048223F /* AppDelegate.m */; };
 		B0170CBC1EE6C3F80048223F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0170CBA1EE6C3F80048223F /* ViewController.m */; };
 		B0170CD21EE6CB7D0048223F /* MMMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0170CC91EE6CB4E0048223F /* MMMarkdown.framework */; };
@@ -130,6 +131,10 @@
 /* Begin PBXFileReference section */
 		27CDDF941ECA3893AF9F2120 /* Pods-iOSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProject/Pods-iOSProject.release.xcconfig"; sourceTree = "<group>"; };
 		81B67C41678451C809E94967 /* Pods-iOSProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProject/Pods-iOSProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B0078D2A1F31C41F00C05392 /* NSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		B0078D2B1F31C41F00C05392 /* NSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
+		B0078D2D1F31C8CF00C05392 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		B0078D2E1F31C8F800C05392 /* Project.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.pch; sourceTree = "<group>"; };
 		B0170CB71EE6C3F80048223F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0170CB81EE6C3F80048223F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B0170CB91EE6C3F80048223F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -275,6 +280,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B0078D241F31C3E000C05392 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				B0078D2A1F31C41F00C05392 /* NSOperationViewController.h */,
+				B0078D2B1F31C41F00C05392 /* NSOperationViewController.m */,
+			);
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
 		B0170CB61EE6C3F80048223F /* Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +368,7 @@
 		B0170CD91EE6CE0A0048223F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B0078D241F31C3E000C05392 /* NSOperation */,
 				B0F9092E1F2C514B0007E3F6 /* Programe */,
 				B0F909201F2C35BC0007E3F6 /* WKWebView */,
 				B0ED86DC1EEEA58F006CA8C6 /* RSA */,
@@ -559,6 +574,8 @@
 				B082D3D21EE7E771006DF3A3 /* fetch_demo_images.sh */,
 				B0D8854C1EE7AA540030D66C /* Images */,
 				B0D8854F1EE7AA540030D66C /* Plist */,
+				B0078D2D1F31C8CF00C05392 /* Define.h */,
+				B0078D2E1F31C8F800C05392 /* Project.pch */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -995,6 +1012,7 @@
 				B0170D071EE78A6D0048223F /* ZMChineseConvert.m in Sources */,
 				B0F909281F2C35D10007E3F6 /* WKWebViewController.m in Sources */,
 				B0F227AC1EFCF99A002A46CC /* Third_TableViewController.m in Sources */,
+				B0078D2C1F31C41F00C05392 /* NSOperationViewController.m in Sources */,
 				B0B8AD651EE78D66003D58B1 /* CSAnimationTableViewController.m in Sources */,
 				B071EE941F09157B00EF86F1 /* PhotoFeedNodeController.m in Sources */,
 				B0D885771EE7D2F40030D66C /* FastlimageTableViewCell.m in Sources */,

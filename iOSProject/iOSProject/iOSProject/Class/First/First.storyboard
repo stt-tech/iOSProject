@@ -217,6 +217,30 @@
                                             <segue destination="FjP-c5-Ge0" kind="push" id="j3M-Gf-vG7"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="eVH-4E-hhJ">
+                                        <rect key="frame" x="0.0" y="352" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eVH-4E-hhJ" id="jms-aO-NRq">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSOperation底层" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj8-q3-6sb">
+                                                    <rect key="frame" x="30" y="0.0" width="133.5" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bj8-q3-6sb" firstAttribute="top" secondItem="jms-aO-NRq" secondAttribute="top" id="1I3-Rk-RHf"/>
+                                                <constraint firstAttribute="bottom" secondItem="bj8-q3-6sb" secondAttribute="bottom" id="ncE-vR-TSd"/>
+                                                <constraint firstItem="bj8-q3-6sb" firstAttribute="leading" secondItem="jms-aO-NRq" secondAttribute="leading" constant="30" id="utH-6T-DK4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Bje-uu-ag6" kind="push" id="DCB-kU-b0R"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -442,6 +466,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNQ-oy-ghU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="369" y="1359"/>
+        </scene>
+        <!--Operation View Controller-->
+        <scene sceneID="9LP-dA-Gn8">
+            <objects>
+                <viewController id="Bje-uu-ag6" customClass="NSOperationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SIX-AD-9gy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zm5-B9-nFy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WMW-xP-uyG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vBs-QI-TdF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yes-bn-nhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="1876"/>
         </scene>
         <!--Shimmer View Controller-->
         <scene sceneID="knJ-EU-5Ij">
