@@ -15,13 +15,12 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    //这里本来是要写下NSOperation 的底层信息的
-    
     UILabel * label = [[UILabel alloc] init];
-    [self.view addSubnode:label];
-//    [UIScreen mainScreen].bounds.size.width
-//    label.frame = CGRectMake(100, 100, , <#CGFloat height#>)
-    
+    [self.view addSubview:label];
+    label.frame = CGRectMake(100, 20, SCREEN_WIDTH - 40, 100);
+    label.text = @"这里本来是要写下NSOperation 的底层信息的";
+    label.font = [UIFont systemFontOfSize:17];
+    labe.textColor = [UIColor redColor];
 }
 
 @end

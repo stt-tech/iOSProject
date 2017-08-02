@@ -241,6 +241,30 @@
                                             <segue destination="Bje-uu-ag6" kind="push" id="DCB-kU-b0R"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Jky-vA-2zN">
+                                        <rect key="frame" x="0.0" y="396" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jky-vA-2zN" id="kdI-gl-Njz">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二级目录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOl-WR-Uob">
+                                                    <rect key="frame" x="30" y="0.0" width="69.5" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pOl-WR-Uob" firstAttribute="leading" secondItem="kdI-gl-Njz" secondAttribute="leading" constant="30" id="Cn1-CP-Jol"/>
+                                                <constraint firstAttribute="bottom" secondItem="pOl-WR-Uob" secondAttribute="bottom" id="mSy-pK-7yE"/>
+                                                <constraint firstItem="pOl-WR-Uob" firstAttribute="top" secondItem="kdI-gl-Njz" secondAttribute="top" id="uQn-Gs-ROv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FSO-f2-Au0" kind="push" id="x4s-ja-Dow"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1614,6 +1638,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoY-gy-TsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1817" y="-485"/>
+        </scene>
+        <!--Tang Qiao View Controller-->
+        <scene sceneID="W14-8C-rol">
+            <objects>
+                <viewController id="FSO-f2-Au0" customClass="TangQiao_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kin-vy-biX"/>
+                        <viewControllerLayoutGuide type="bottom" id="tkr-fe-ods"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nN9-bx-KIT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xhf-Qe-Vfh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LiQ-x8-hHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-402" y="-137"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PMf-0T-6GH">
