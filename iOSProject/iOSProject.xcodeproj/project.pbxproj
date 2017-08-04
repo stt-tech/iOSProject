@@ -68,6 +68,8 @@
 		B0ED86E71EEEB0CB006CA8C6 /* m_private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = B0ED86E61EEEB0CB006CA8C6 /* m_private_key.p12 */; };
 		B0F227A81EFCF7C7002A46CC /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F227A71EFCF7C7002A46CC /* Third.storyboard */; };
 		B0F227AC1EFCF99A002A46CC /* Third_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F227AB1EFCF99A002A46CC /* Third_TableViewController.m */; };
+		B0F7F72D1F3339AC00D14B11 /* NSDictionary+AL.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7F72C1F3339AC00D14B11 /* NSDictionary+AL.m */; };
+		B0F7F7351F33436800D14B11 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7F7341F33436800D14B11 /* NSObject+Safe.m */; };
 		B0F909281F2C35D10007E3F6 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F909271F2C35D10007E3F6 /* WKWebViewController.m */; };
 		B0F9092B1F2C3A390007E3F6 /* Base_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9092A1F2C3A390007E3F6 /* Base_ViewController.m */; };
 		B0F9092D1F2C3AE80007E3F6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F9092C1F2C3AE10007E3F6 /* WebKit.framework */; };
@@ -227,6 +229,10 @@
 		B0F227A71EFCF7C7002A46CC /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 		B0F227AA1EFCF99A002A46CC /* Third_TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Third_TableViewController.h; sourceTree = "<group>"; };
 		B0F227AB1EFCF99A002A46CC /* Third_TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Third_TableViewController.m; sourceTree = "<group>"; };
+		B0F7F72B1F3339AC00D14B11 /* NSDictionary+AL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AL.h"; sourceTree = "<group>"; };
+		B0F7F72C1F3339AC00D14B11 /* NSDictionary+AL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+AL.m"; sourceTree = "<group>"; };
+		B0F7F7331F33436800D14B11 /* NSObject+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
+		B0F7F7341F33436800D14B11 /* NSObject+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
 		B0F909261F2C35D10007E3F6 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		B0F909271F2C35D10007E3F6 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		B0F909291F2C3A390007E3F6 /* Base_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base_ViewController.h; sourceTree = "<group>"; };
@@ -304,6 +310,10 @@
 			children = (
 				B0078D311F31CABB00C05392 /* TangQiao_ViewController.h */,
 				B0078D321F31CABB00C05392 /* TangQiao_ViewController.m */,
+				B0F7F72B1F3339AC00D14B11 /* NSDictionary+AL.h */,
+				B0F7F72C1F3339AC00D14B11 /* NSDictionary+AL.m */,
+				B0F7F7331F33436800D14B11 /* NSObject+Safe.h */,
+				B0F7F7341F33436800D14B11 /* NSObject+Safe.m */,
 			);
 			path = TangQiao;
 			sourceTree = "<group>";
@@ -1029,6 +1039,7 @@
 				B0170D091EE78A6D0048223F /* FontViewController.m in Sources */,
 				B0ED86DF1EEEA5A7006CA8C6 /* RSAViewController.m in Sources */,
 				B0170D071EE78A6D0048223F /* ZMChineseConvert.m in Sources */,
+				B0F7F72D1F3339AC00D14B11 /* NSDictionary+AL.m in Sources */,
 				B0F909281F2C35D10007E3F6 /* WKWebViewController.m in Sources */,
 				B0F227AC1EFCF99A002A46CC /* Third_TableViewController.m in Sources */,
 				B0078D331F31CABB00C05392 /* TangQiao_ViewController.m in Sources */,
@@ -1053,6 +1064,7 @@
 				B0ED86DB1EEE9ED0006CA8C6 /* RSAEncryptor.m in Sources */,
 				B0F909311F2C51630007E3F6 /* Programe_ViewController.m in Sources */,
 				B0F9092B1F2C3A390007E3F6 /* Base_ViewController.m in Sources */,
+				B0F7F7351F33436800D14B11 /* NSObject+Safe.m in Sources */,
 				B0B6DD3D1EE8F4B200A37555 /* TXManager.m in Sources */,
 				B0D885741EE7CD010030D66C /* FICDPhoto.m in Sources */,
 				B0F9093B1F2C5A4B0007E3F6 /* NSArray+Log.m in Sources */,

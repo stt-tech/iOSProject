@@ -18,15 +18,15 @@
 //}
 
 
--(NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level
-{
-    NSMutableString * mutString = [NSMutableString stringWithString:@"\n{\n"];
-    [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        [mutString appendFormat:@"\t%@ = %@\n",key,obj];
-    }];
-    [mutString stringByAppendingString:@"\n}\n"];
-    return  mutString.copy;
-}
+//-(NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level
+//{
+//    NSMutableString * mutString = [NSMutableString stringWithString:@"\n{\n"];
+//    [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//        [mutString appendFormat:@"\t%@ = %@\n",key,obj];
+//    }];
+//    [mutString stringByAppendingString:@"\n}\n"];
+//    return  mutString.copy;
+//}
 
 
 @end
